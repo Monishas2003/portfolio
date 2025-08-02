@@ -1,0 +1,152 @@
+/* ----------  1. Large tablets & small laptops  (≤ 1024 px)  ---------- */
+@media only screen and (max-width: 1024px) {
+  /* Navbar */
+  nav {
+    height: 14vh;
+  }
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  /* Global section spacing */
+  section {
+    height: auto;
+    padding-top: 8vh;
+    margin: 0 6rem;
+  }
+
+  /* Profile section */
+  #profile {
+    gap: 3rem;
+    flex-direction: column;
+    height: auto;
+  }
+  .section_pic_container {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* About / experience / projects cards */
+  .about_container,
+  .experience-details-container .about_container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .details_container {
+    text-align: center;
+  }
+
+  /* Article (skill) icons */
+  .article_container {
+    justify-content: center;
+  }
+}
+
+/* ----------  2. Tablets & large phones  (≤ 768 px)  ---------- */
+@media only screen and (max-width: 768px) {
+  /* Swap navbars */
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 12vh;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Full-width drop-down for hamburger menu */
+  .menu-links {
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #fff;
+    border-top: 1px solid rgb(163, 163, 163);
+    transition: max-height 0.3s ease-in-out;
+  }
+  .menu-links a {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+  }
+
+  /* Main layout tweaks */
+  body {
+    font-size: 95%;
+  }
+  section {
+    margin: 0 3rem;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .section_text_p2 {
+    font-size: 1.25rem;
+  }
+
+  /* Buttons */
+  .btn {
+    width: 7rem;
+    padding: 0.8rem;
+  }
+
+  /* Project cards stack */
+  .experience-details-container .about_container {
+    flex-direction: column;
+  }
+  .project-img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* ----------  3. Small phones  (≤ 480 px)  ---------- */
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 90%;
+  }
+
+  /* Tighter margins */
+  section {
+    margin: 0 1rem;
+  }
+
+  /* Profile picture */
+  .section_pic_container {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* Reduce hero text size */
+  .title {
+    font-size: 1.8rem;
+  }
+
+  /* Button stack on very small screens */
+  .btn-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* Contact icons & text */
+  .contacts-info-upper-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* Footer */
+  footer nav .nav-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
